@@ -1,16 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet Shop</title>
+    <link
+      rel="shortcut icon"
+      href="c1-assets/dog-cartoon.png"
+      type="image/x-icon"
+    />
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Remix con CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-- Tailwind CDN -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Config -->
     <style type="text/tailwindcss">
       @theme {
         --color-clifford: #da373d;
       }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sora;
+      }
     </style>
   </head>
-  <body></body>
+  <body>
+    <!-- Header Section  -->
+    <header class="shadow-md">
+      <!-- navigation bar  -->
+      <nav
+        class="flex justify-between items-center px-[5%] py-2 bg-[#FFF9F4] text-black"
+      >
+        <!-- nav logo -->
+        <div class="flex items-center">
+          <img class="mr-1" src="c1-assets/logo-header.png" alt="" />
+          <h2 class="hidden lg:inline-block text-xl">
+            Browse<span class="text-yellow-400">4</span>Pets
+          </h2>
+        </div>
+        <!-- nav-link div -->
+        <div class="nav-link">
+          <ul class="lg:flex gap-8 text-[1rem]">
+            <li class="hidden lg:inline-block"><a href="">Find a Pet</a></li>
+            <li class="hidden lg:inline-block"><a href="">Breeds</a></li>
+            <li class="hidden lg:inline-block"><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- login Btn div -->
+        <div class="login-div space-x-2 flex items-center">
+          <a href=""
+            ><i
+              class="ri-notification-2-line hidden lg:inline-block text-2xl"
+            ></i
+          ></a>
+          <a href=""
+            ><i class="ri-search-line hidden lg:inline-block text-2xl"></i
+          ></a>
+          <div class="btn-div">
+            <button
+              class="hidden btn lg:inline-block w-24 border-yellow-400 bg-transparent hover:bg-transparent text-black"
+            >
+              Login
+            </button>
+            <button
+              class="hidden btn lg:inline-block w-24 text-black bg-[#ffdc26] hover:bg-transparent border-none"
+            >
+              Register
+            </button>
+          </div>
+          <a href="" class="lg:hidden text-4xl"><i class="ri-menu-line"></i></a>
+        </div>
+      </nav>
+    </header>
+    <hr class="lg:hidden" />
+    <!-- Main Section -->
+    <main></main>
+    <!-- Footer Section -->
+    <footer></footer>
+  </body>
 </html>
