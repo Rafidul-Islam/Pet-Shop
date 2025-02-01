@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
     <!-- Remix con CDN -->
@@ -45,10 +45,10 @@
   </head>
   <body>
     <!-- Header Section  -->
-    <header class="shadow-md">
+    <header class="">
       <!-- navigation bar  -->
       <nav
-        class="flex justify-between items-center px-[5%] py-2 bg-[#FFF9F4] text-black"
+        class="flex justify-between items-center px-[5%] py-2 text-black bg-[#FFF9F4] shadow-lg lg:shadow-xs relative z-20"
       >
         <!-- nav logo -->
         <div class="flex items-center">
@@ -82,7 +82,7 @@
               Login
             </button>
             <button
-              class="hidden btn lg:inline-block w-24 text-black bg-[#ffdc26] hover:bg-transparent border-none"
+              class="hidden btn lg:inline-block w-24 text-black bg-[#ffdc26] hover:bg-[#ffdd32] border-none"
             >
               Register
             </button>
@@ -90,8 +90,32 @@
           <a href="" class="lg:hidden text-4xl"><i class="ri-menu-line"></i></a>
         </div>
       </nav>
+      <hr class="lg:hidden" />
+
+      <!-- pamper pet section -->
+      <div class="header-description px-[5%] space-y-5 relative z-10 lg:w-3/4">
+        <h1
+          class="text-5xl/tight font-bold mt-5 text-black lg:text-6xl/tight"
+          style="font-family: ADLaM Display, serif"
+        >
+          Pamper Your Pet, Because They Deserve the Best
+        </h1>
+        <p>
+          Discover a world of treats, toys, and essentials handpicked for your
+          furry friends. Shop now and <br />
+          make tails wag with joy!
+        </p>
+        <button class="btn w-30 font-bold bg-[#ffdc26] hover:bg-[#ffdd32]">
+          Find a pet
+        </button>
+      </div>
+      <img
+        class="absolute top-70 lg:top-0"
+        src="c1-assets/cat-big.png"
+        alt=""
+      />
     </header>
-    <hr class="lg:hidden" />
+
     <!-- Main Section -->
     <main></main>
     <!-- Footer Section -->
