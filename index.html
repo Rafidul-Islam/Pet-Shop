@@ -64,7 +64,6 @@
     </style>
   </head>
   <body>
-    <!-- Header Section  -->
     <header>
       <!-- navigation bar  -->
       <nav
@@ -79,10 +78,22 @@
         </div>
         <!-- nav-link div -->
         <div class="nav-link">
-          <ul class="lg:flex gap-8 text-[1rem]">
-            <li class="hidden lg:inline-block"><a href="">Find a Pet</a></li>
-            <li class="hidden lg:inline-block"><a href="">Breeds</a></li>
-            <li class="hidden lg:inline-block"><a href="">Contact Us</a></li>
+          <ul class="lg:flex text-[1rem]">
+            <li
+              class="hidden lg:inline-block px-4 py-4 rounded-lg hover:bg-slate-500"
+            >
+              <a href="">Find a Pet</a>
+            </li>
+            <li
+              class="hidden lg:inline-block px-4 py-4 rounded-lg hover:bg-slate-500"
+            >
+              <a href="">Breeds</a>
+            </li>
+            <li
+              class="hidden lg:inline-block px-4 py-4 rounded-lg hover:bg-slate-500"
+            >
+              <a href="">Contact Us</a>
+            </li>
           </ul>
         </div>
         <!-- login Btn div -->
@@ -110,37 +121,45 @@
           <a href="" class="lg:hidden text-4xl"><i class="ri-menu-line"></i></a>
         </div>
       </nav>
-      <hr class="lg:hidden" />
+      <hr class="lg:hidden xl:hidden" />
       <!-- pamper pet section/header section description -->
-      <div class="relative px-[5%] space-y-5">
+      <div
+        class="px-[5%] py-[4%] space-y-2 lg:space-y-6 xl:space-y-8 max-w-full max-h-full relative z-10"
+      >
         <h1
-          class="text-4xl/tight font-bold mt-5 text-black lg:text-6xl/tight lg:font-semibold lg:w-3/5 animate-fade-in"
+          class="text-4xl/tight lg:text-5xl/tight xl:text-7xl/tight font-bold text-black lg:font-semibold lg:w-3/5 animate-fade-in"
           style="font-family: ADLaM Display, serif"
         >
           Pamper Your Pet, Because They Deserve the Best
         </h1>
 
-        <p>
-          Discover a world of treats, toys, and essentials handpicked for your
-          furry friends.<br class="hidden lg:inline" />
-          Shop now and make tails wag with joy!
+        <p class="xl:text-xl">
+          Discover a world of treats, toys, and essentials handpicked
+          <br class="hidden lg:inline-block" />
+          for your furry friends. Shop now and make tails wag with joy!
         </p>
 
-        <button class="btn w-30 font-bold bg-[#ffdc26] hover:bg-[#ffdd32]">
+        <button
+          class="btn xl:text-xl font-bold bg-[#ffdc26] hover:bg-[#ffdd32]"
+        >
           Find a pet
         </button>
 
-        <div class="absolute -z-10 top-32 lg:-top-32">
-          <img class="relative w-[95%]" src="c1-assets/cat-big.png" alt="" />
+        <div class="absolute -z-10 top-44 left-0 lg:top-0 xl:top-0 xl:left-8">
+          <img class=" " id="pet" src="c1-assets/cat-big.png" alt="" />
         </div>
       </div>
     </header>
-
-    <!-- Main Section -->
+    <!--  -->
+    <!--  -->
     <main>
-      <!-- Section 0 -->
-      <section class="banner2-1 px-[5%] pt-[3%] pb-0 mt-40 lg:mt-80">
-        <h2 class="text-2xl text-black font-bold font-ad mb-10 lg:mb-10">
+      <!-- Section1 -->
+      <section
+        class="px-[5%] pt-[3%] mt-32 lg:mt-[20%] lg:my-[5%] xl:mt-[20%] xl:my-[5%]"
+      >
+        <h2
+          class="text-3xl pb-[5%] lg:pb-[3%] xl:pb-[2%] text-black font-bold font-ad"
+        >
           Browse by Categories
         </h2>
         <!-- Card Container -->
@@ -225,9 +244,9 @@
           </div>
         </div>
       </section>
-      <!-- Section 2 -->
-      <section class="banner3 px-[5%] py-[5%] mt-40 lg:bg-[#fff9f4]">
-        <h2 class="text-2xl text-black font-bold font-ad mb-4">
+      <!-- Section2 -->
+      <section class="banner3 px-[5%] py-[5%] mt-5 lg:bg-[#fff9f4]">
+        <h2 class="text-3xl text-black font-bold font-ad mb-4">
           Trending Pet Products
         </h2>
 
@@ -403,7 +422,7 @@
       <section class="banner4 px-[5%] py-[3%] mt-8 lg:mt-0">
         <h2
           style="font-family: ADLaM Display, serif"
-          class="text-2xl text-black font-bold py-4"
+          class="text-3xl text-black font-bold py-4"
         >
           Everyday low Price
         </h2>
@@ -433,7 +452,7 @@
                 </button>
               </div>
               <img
-                class="absolute w-[50%] lg:w-[30%] left-[50%] lg:left-[65%] lg:top-8 bottom-0"
+                class="absolute w-[50%] left-[50%] bottom-0 lg:max-w-[40%] lg:left-[60%] lg:top-10 xl:max-w-[33%] xl:top-0 xl:left-[65%]"
                 src="c1-assets/cute-dog-mid.png"
                 alt=""
               />
@@ -451,7 +470,7 @@
               </div>
 
               <img
-                class="absolute w-[45%] lg:w-[45%] left-[50%] bottom-0"
+                class="absolute max-w-[45%] lg:max-w-[55%] left-[50%] lg:left-[40%] bottom-0 xl:max-w-[45%] xl:top-2 xl:left-[50%]"
                 src="c1-assets/cute-pet-mid.png"
                 alt=""
               />
@@ -460,48 +479,34 @@
         </div>
       </section>
     </main>
-
-    <footer class="bg-[#fceec7] relative mt-[280px] lg:mt-40">
+    <footer class="bg-[#fceec7] relative lg:relative lg:px-[5%]">
       <!-- Newsletter Section -->
       <section
-        class="banner5 px-[5%] w-5/6 absolute left-[50px] top-[-240px] lg:left-[130px] lg:-top-40"
+        class="mx-[5%] p-5 bg-red-100 rounded-lg absolute -mt-[210px] lg:flex lg:absolute lg:-mt-[110px] lg:w-[90%] lg:left-0 lg:mx-[5%] xl:-mt-[150px]"
       >
-        <div
-          class="flex flex-col lg:flex-row justify-center items-center py-8 bg-[#fff9f4] rounded-xl border-black"
-        >
-          <div class="lg:w-1/3">
-            <img
-              class="w-[60%] lg:w-[60%] mx-auto"
-              src="c1-assets/cute-pet-mid.png"
-              alt=""
-            />
-          </div>
-
-          <div class="lg:w-2/3 p-5">
-            <h2 class="text-3xl font-bold text-black font-ad">
-              Get Pawsome News
-            </h2>
-            <p class="py-2">
-              Exclusive training tips, ticks, product deals and more.
-            </p>
-            <input
-              class="w-full lg:w-[80%] px-2 py-4 my-5 rounded-lg bg-white"
-              type="email"
-              placeholder="Enter email..."
-            />
-            <br />
-
-            <button
-              class="btn lg:inline-block w-full lg:w-[80%] text-black bg-[#ffdc26] hover:bg-[#ffdd32] border-none"
-            >
-              Subscribe
-            </button>
-          </div>
+        <div class="lg:w-1/3">
+          <img
+            class="w-[50%] mx-auto lg:w-[50%]"
+            src="c1-assets/cute-pet-mid.png"
+            alt=""
+          />
+        </div>
+        <div class="space-y-2 text-center lg:w-2/3">
+          <h2 class="text-3xl font-ad font-bold">Get Pawsome News</h2>
+          <p>Exclusive training tips, ticks, product deals and more.</p>
+          <input
+            class="py-3 px-2 bg-white min-w-full rounded-lg"
+            type="email"
+            placeholder="Enter email"
+          />
+          <button class="block w-full mx-auto btn bg-yellow-400">
+            Subscribe
+          </button>
         </div>
       </section>
       <!-- main-footer Section -->
       <section
-        class="footer-links grid lg:grid-cols-3 items-center lg:text-center space-y-4 px-[10%] pt-[380px] lg:px-[15%] lg:pt-[15%] lg:pb-[5%]"
+        class="footer-links mt-[230px] pt-[260px] grid lg:grid-cols-3 items-center space-y-4 px-[5%] lg:px-[0] lg:gap-52 lg:py-[5%] lg:mt-[140px] lg:pt-[120px] xl:mt-[150px] xl:pt-[150px]"
       >
         <div>
           <div class="flex items-center">
@@ -525,7 +530,7 @@
         </div>
         <div>
           <h2>Follow us on</h2>
-          <ul class="text-2xl flex lg:justify-center pb-8 gap-2">
+          <ul class="text-2xl flex gap-2">
             <li>
               <a href=""><i class="ri-facebook-circle-fill"></i></a>
             </li>
